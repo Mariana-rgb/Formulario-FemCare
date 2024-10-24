@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário Inicial</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulário Inicial</h2>
+        <form id="initialForm">
+            <label for="ageRange">Faixa Etária:</label>
+            <select id="ageRange" required>
+                <option value="">Selecione...</option>
+                <option value="adolescente">Adolescente</option>
+                <option value="jovem adulta(o)">Jovem adulta(o)</option>
+                <option value="adulta(o)">Adulta(o)</option>
+                <option value="idosa(o)">Idosa(o)</option>
+            </select>
+
+            <label for="income">Renda:</label>
+            <select id="income" required>
+                <option value="">Selecione...</option>
+                <option value="baixa">Baixa</option>
+                <option value="média">Média</option>
+                <option value="alta">Alta</option>
+            </select>
+
+            <label>Você é da comunidade trans?</label>
+            <select id="transCommunity" required>
+                <option value="">Selecione...</option>
+                <option value="sim">Sim</option>
+                <option value="não">Não</option>
+            </select>
+
+            <div id="transIdentityContainer" style="display: none;">
+                <label>Você se identifica como:</label>
+                <select id="transIdentity">
+                    <option value="">Selecione...</option>
+                    <option value="mulher trans">Mulher trans</option>
+                    <option value="homem trans">Homem trans</option>
+                </select>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

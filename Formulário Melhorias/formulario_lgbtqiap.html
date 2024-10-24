@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.lgbtqiap.css">
+    <title>Formulário da Comunidade LGBTQIAP+</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulário da Comunidade LGBTQIAP+</h2>
+        <form id="lgbtqiapForm">
+            <label><strong>Faixa Etária:</strong></label>
+            <input type="text" id="age" readonly>
+
+            <label><strong>Renda:</strong></label>
+            <input type="text" id="income" readonly>
+
+            <label><strong>Quais especialidades de saúde você gostaria de ver mais no nosso site? (marque todas as que se aplicam)</strong></label>
+            <div>
+                <input type="checkbox" id="specialty1" value="Saúde Mental">
+                <label for="specialty1">Saúde Mental</label>
+                <br>
+                <input type="checkbox" id="specialty2" value="Informação sobre Hormônios">
+                <label for="specialty2">Informação sobre Hormônios</label>
+                <br>
+                <input type="checkbox" id="specialty3" value="Recursos sobre Cirurgias de Transição">
+                <label for="specialty3">Recursos sobre Cirurgias de Transição</label>
+                <br>
+                <input type="checkbox" id="specialty4" value="Cuidados Preventivos">
+                <label for="specialty4">Cuidados Preventivos</label>
+                <br>
+                <input type="checkbox" id="health5" value="outro">
+                <label for="health5">Outro...</label>
+            </div>
+            <div id="otherHealthContainer" style="display: none;">
+                <label for="otherHealthDescription"><strong>Descreva:</strong></label>
+                <textarea id="otherHealthDescription" rows="4" placeholder="Escreva aqui..."></textarea>
+            </div>
+            <br>
+            <label><strong>Você encontrou algum problema ao usar nosso site?</strong></label>
+            <textarea id="issues" placeholder="Descreva os problemas encontrados..."></textarea>
+
+            <label><strong>Como podemos tornar o site mais inclusivo?</strong></label>
+            <textarea id="inclusivitySuggestions" placeholder="Sugestões de inclusão..."></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="formulario_lgbtqiap.js"></script>
+</body>
+</html>

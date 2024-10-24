@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario_melhorias.css">
+    <title>Formulário de Melhorias</title>
+</head>
+<body>
+    <div class="form-container">
+        <form id="cisForm">
+            <h2>Formulário de Melhorias</h2>
+            <label><strong>Faixa Etária:</strong></label>
+            <input type="text" id="age" readonly>
+
+            <label><strong>Renda:</strong></label>
+            <input type="text" id="income" readonly>
+            <br>
+            <label><strong>Quais áreas de saúde feminina você gostaria de ver mais no nosso site? (marque todas as que se aplicam)</strong></label>
+            <div class="checkbox-container">
+                <input type="checkbox" id="health1" value="ginecologia">
+                <label for="health1">Ginecologia</label>
+                <br>
+                <input type="checkbox" id="health2" value="saudeMental">
+                <label for="health2">Saúde Mental</label>
+                <br>
+                <input type="checkbox" id="health3" value="nutricao">
+                <label for="health3">Nutrição</label>
+                <br>
+                <input type="checkbox" id="health4" value="exercicios">
+                <label for="health4">Exercícios Físicos</label>
+                <br>
+                <input type="checkbox" id="health5" value="outro">
+                <label for="health5">Outro...</label>
+            </div>
+            <div id="otherHealthContainer" style="display: none;">
+                <label for="otherHealthDescription"><strong>Descreva:</strong></label>
+                <textarea id="otherHealthDescription" rows="4" placeholder="Escreva aqui..."></textarea>
+            </div>
+            <label><strong>Você encontrou algum problema ao usar nosso site?</strong></label>
+            <textarea id="websiteIssues" placeholder="Descreva os problemas encontrados..."></textarea>
+
+            <label><strong>Como podemos melhorar a experiência de navegação no site?</strong></label>
+            <textarea id="navigationImprovements" placeholder="Sugestões para melhorias..."></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="formulario_melhorias.js"></script>
+</body>
+</html>

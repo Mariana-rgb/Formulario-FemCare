@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: rgb(250, 250, 250); /* Cor de fundo */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 90%; /* Largura relativa */
+    max-width: 500px; /* Largura máxima */
+    border: 3px solid #9f7dd4; /* Azul claro */
+}
+
+h2 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #fff; /* Cor do texto do título */
+    background: linear-gradient(to right, #b773cc, #d86dd3); /* Gradiente */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+label {
+    display: block; /* Cada label ocupa a linha inteira */
+    margin-bottom: 5px; /* Espaço abaixo de cada label */
+}
+
+select,
+input[type="text"],
+textarea {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaço abaixo dos campos */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+button {
+    background-color: #9a6ac2; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    width: 100%; /* Largura total */
+}
+
+button:hover {
+    background-color: #8847bd; /* Cor do botão ao passar o mouse */
+}
